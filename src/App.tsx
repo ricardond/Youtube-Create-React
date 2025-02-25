@@ -1,16 +1,7 @@
-import { useState } from "react";
+import { AppRoutes } from "./routes";
 
-export default function App(){
-  const [contador, setContador] = useState(1);
-
-  function AddContador(){
-      setContador(contador + 1);
-  }
-
+export function App(){
   return(
-    <div>
-      <div>{contador}</div>
-      <button onClick={AddContador}>Adicionar</button>
-    </div>
+    <AppRoutes/>
   )
 }
